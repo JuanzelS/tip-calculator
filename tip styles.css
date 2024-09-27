@@ -1,0 +1,84 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Calculator container styling */
+.calculator {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input field styling */
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Displayed results styling */
+#display-tip, #display-total {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+/* Additional styling to make it visually appealing */
+button:active {
+    background-color: #bbb;
+}
+
+/* For small screens, the layout should still work responsively */
+@media (max-width: 600px) {
+    .calculator {
+        max-width: 90%;
+    }
+
+    input[type="number"] {
+        font-size: 1rem;
+    }
+}
